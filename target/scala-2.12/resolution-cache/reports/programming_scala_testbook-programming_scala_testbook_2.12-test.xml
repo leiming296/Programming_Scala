@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="programming_scala_testbook"
+		module="programming_scala_testbook_2.12"
+		revision="0.1"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180114103756"/>
+	<dependencies>
+		<module organisation="com.novocode" name="junit-interface">
+			<revision name="0.10" status="release" pubdate="20130730070827" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/szeiger/junit-interface/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
+				<license name="Two-clause BSD-style license" url="http://github.com/szeiger/junit-interface/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2921" time="0" location="C:\Users\ming\.ivy2\cache\com.novocode\junit-interface\ivy-0.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.pom"/>
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="0.10" rev-constraint-default="0.10" rev-constraint-dynamic="0.10" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="junit-interface" type="jar" ext="jar" status="no" details="" size="22633" time="0" location="C:\Users\ming\.ivy2\cache\com.novocode\junit-interface\jars\junit-interface-0.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-tools.testing" name="test-interface">
+			<revision name="0.5" status="release" pubdate="20100327163658" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<metadata-artifact status="no" details="" size="2363" time="0" location="C:\Users\ming\.ivy2\cache\org.scala-tools.testing\test-interface\ivy-0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.pom"/>
+				<caller organisation="com.novocode" name="junit-interface" conf="default, compile, runtime, master" rev="0.5" rev-constraint-default="0.5" rev-constraint-dynamic="0.5" callerrev="0.10"/>
+				<artifacts>
+					<artifact name="test-interface" type="jar" ext="jar" status="no" details="" size="4407" time="0" location="C:\Users\ming\.ivy2\cache\org.scala-tools.testing\test-interface\jars\test-interface-0.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit-dep">
+			<revision name="4.10" status="release" pubdate="20110929121235" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="5">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="no" details="" size="2940" time="0" location="C:\Users\ming\.ivy2\cache\junit\junit-dep\ivy-4.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.pom"/>
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="4.10" rev-constraint-default="4.10" rev-constraint-dynamic="4.10" callerrev="0.1"/>
+				<caller organisation="com.novocode" name="junit-interface" conf="default, compile, runtime, master" rev="4.10" rev-constraint-default="4.10" rev-constraint-dynamic="4.10" callerrev="0.10"/>
+				<artifacts>
+					<artifact name="junit-dep" type="jar" ext="jar" status="no" details="" size="234088" time="0" location="C:\Users\ming\.ivy2\cache\junit\junit-dep\jars\junit-dep-4.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.1" status="release" pubdate="20070718121143" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="BSD style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="4385" time="0" location="C:\Users\ming\.ivy2\cache\org.hamcrest\hamcrest-core\ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom"/>
+				<caller organisation="junit" name="junit-dep" conf="default, compile, runtime, master" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="4.10"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="jar" ext="jar" status="no" details="" size="76643" time="0" location="C:\Users\ming\.ivy2\cache\org.hamcrest\hamcrest-core\jars\hamcrest-core-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.1.2" status="release" pubdate="20140402124238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10719" time="0" location="C:\Users\ming\.ivy2\cache\ch.qos.logback\logback-classic\ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.pom"/>
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="270750" time="0" location="C:\Users\ming\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.6" status="release" pubdate="20140205143714" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<metadata-artifact status="no" details="" size="4434" time="0" location="C:\Users\ming\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="1.1.2"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="28688" time="0" location="C:\Users\ming\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.1.2" status="release" pubdate="20140402124047" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="8486" time="0" location="C:\Users\ming\.ivy2\cache\ch.qos.logback\logback-core\ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="1.1.2"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="427729" time="0" location="C:\Users\ming\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.4" status="release" pubdate="20171011002224" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2860" time="0" location="C:\Users\ming\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.4/scala-reflect-2.12.4.pom"/>
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3587892" time="0" location="C:\Users\ming\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.4/scala-reflect-2.12.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.4" status="release" pubdate="20171011000456" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\ming\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4.pom"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="default, compile, runtime, master" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.12.4"/>
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5247152" time="0" location="C:\Users\ming\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.specs2" name="specs2_2.12">
+			<revision name="2.4" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatest" name="scalatest_2.12">
+			<revision name="2.2.4" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalacheck" name="scalacheck_2.12">
+			<revision name="1.12.5" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="1.12.5" rev-constraint-default="1.12.5" rev-constraint-dynamic="1.12.5" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-core_2.12">
+			<revision name="7.1.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="7.1.0" rev-constraint-default="7.1.0" rev-constraint-dynamic="7.1.0" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-slf4j_2.12">
+			<revision name="2.3.4" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="2.3.4" rev-constraint-default="2.3.4" rev-constraint-dynamic="2.3.4" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.12">
+			<revision name="2.3.4" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="2.3.4" rev-constraint-default="2.3.4" rev-constraint-dynamic="2.3.4" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
+			<revision name="1.0.2" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12">
+			<revision name="1.0.2" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-async_2.12">
+			<revision name="0.9.2" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="programming_scala_testbook" name="programming_scala_testbook_2.12" conf="test, compile, runtime" rev="0.9.2" rev-constraint-default="0.9.2" rev-constraint-dynamic="0.9.2" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
