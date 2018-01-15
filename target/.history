@@ -4,3 +4,12 @@ run
 run 
 clean
 run
+run-main ForComprehensionsInDepth.RemoveBlanks
+Projects
+run
+exit 
+compile 
+exit 
+sbt
+exit 
+run

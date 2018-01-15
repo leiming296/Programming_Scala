@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20180114103756"/>
+		date="20180115092211"/>
 	<dependencies>
 		<module organisation="com.novocode" name="junit-interface">
 			<revision name="0.10" status="release" pubdate="20130730070827" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/szeiger/junit-interface/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">

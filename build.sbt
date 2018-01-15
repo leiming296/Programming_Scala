@@ -2,7 +2,8 @@ name := "Programming_Scala_TestBook"
 
 version := "0.1"
 
-scalaVersion := "2.12.4"
+//scalaVersion := "2.12.4"
+scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-async"     % "0.9.2",
@@ -31,5 +32,4 @@ javacOptions  ++= Seq(
   "-Xlint:unchecked", "-Xlint:deprecation") // Java 8: "-Xdiags:verbose")
 
 // Enable improved incremental compilation feature in 2.11.X.
-// see http://www.scala-lang.org/news/2.11.1
-// incOptions := incOptions.value.withNameHashing(true)
+// see http://www.scala-lang.org/news/2.11.1 incOptions := incOptions.value.withNameHashing(true)
