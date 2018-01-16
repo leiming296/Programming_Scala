@@ -15,4 +15,7 @@ def addInts2 (s1: String, s2: String) : Either[NumberFormatException, Int]=
     } catch {
       case oter: NumberFormatException => Left(oter)
     }
-println(addInts2("0", "x"))
+
+ println(addInts2("0", "x"))
+
+println(addInts2("0","3"))
