@@ -4,4 +4,10 @@
 [0m[[0m[33mwarn[0m] [0m[0mC:\Users\ming\workspace\Programming_Scala\src\main\scala\ObjectOrientedProgramming\PersonAuxConstructors3.scala:3:44: imported `Person' is permanently hidden by definition of object Person in package ObjectOrientedProgramming[0m
 [0m[[0m[33mwarn[0m] [0m[0mimport ObjectOrientedProgramming.{Address, Person}[0m
 [0m[[0m[33mwarn[0m] [0m[0m                                           ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\ming\workspace\Programming_Scala\src\main\scala\Traits\abstractClassExample.scala:15:7: side-effecting nullary methods are discouraged: suggest defining as `def teach()` instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def teach   // no need for method body[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\ming\workspace\Programming_Scala\src\main\scala\Traits\abstractClassExample.scala:22:16: side-effecting nullary methods are discouraged: suggest defining as `def teach()` instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  override def teach = println("teaching!")[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mfour warnings found[0m
