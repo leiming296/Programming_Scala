@@ -10,7 +10,3 @@ def m(l: List[Int]) : List[Int] = l map (i => ???)
 //  def get = throw new NoSuchElementException("None.get")
 //}
 
-  def get (key: A) : Option[B] = {
-     if(contains(key))  Some(getValue(key))
-     else None
-  }

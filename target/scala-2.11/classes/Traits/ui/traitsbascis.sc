@@ -6,15 +6,16 @@ trait Philosophical {
 }
 
 class Frog extends Philosophical {
-   override def toString = "gree"
+//   override def toString = "gree"
+  override def toString = "gree"
 }
 
 // using extends add the trait of Philosophical into Frog
 
 val frog = new Frog
 
-
 frog.philosophize
+frog.toString
 
 
 val phil: Philosophical = frog
