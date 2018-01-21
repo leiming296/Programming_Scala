@@ -11,16 +11,12 @@ def positive(i: Int): Validation[List[String], Int] = {
   else Failure(List(s"Nonpostive integer $i"))
 }
 
-//positive(5)+++positive(10)+++positive(25)
-
 for{
   i1 <- positive(5)
   i2 <- positive(10*i1)
   i3 <- positive(25*i2)
   i4 <- positive(2*i3)
 } yield (i1 + i2 + i3 + i4 )
-
-
 
 
 for {
@@ -33,6 +29,5 @@ for {
 // positive(5) +++ positive(10)
 
 positive(5)+++positive(10)+++positive(25)
-
 
 positive(5)+++positive(-10)+++positive(25) +++ positive(-30)

@@ -2,9 +2,9 @@
 val states = List("Alazbama", "Alaska", "Virginia", "Wyoming")
 
 for{ s <- states} println(s)
-
 states foreach println
 states.foreach {s => println(s)}
+
 // states foreach {_.toUpperCase()} // can not return a collection
 
 // what happends if we use yield
@@ -12,7 +12,7 @@ states.foreach {s => println(s)}
 for {
   s <- states
 } yield s.toUpperCase
-
+states map {_.toUpperCase}
 // yield method can produce a collection
 
 // use the map method

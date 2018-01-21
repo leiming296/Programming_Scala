@@ -4,7 +4,7 @@ package ObjectOrientedProgramming
 //  use the the require method to validate input
 
 case class ZipCode(zip: Int, extension: Option[Int] = None) {
-  require(valid(zip, extension),                                     // <1>
+  require(valid(zip, extension),
     s"Invalid Zip+4 specified: $toString")
 
   protected def valid(z: Int, e: Option[Int]): Boolean = {
@@ -14,11 +14,10 @@ case class ZipCode(zip: Int, extension: Option[Int] = None) {
     }
     else false
   }
-
   /** Is it a real US Postal Service zip code? */
-  protected def validUSPS(i: Int, e: Int): Boolean = true            // <2>
+  protected def validUSPS(i: Int, e: Int): Boolean = true
 
-  override def toString =                                            // <3>
+  override def toString =
     if (extension != None) s"$zip-${extension.get}" else zip.toString
 }
 
