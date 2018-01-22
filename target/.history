@@ -20,3 +20,7 @@ run
 compile 
 exit 
 compile 
+sbt 
+compile 
+exit 
+compile 
