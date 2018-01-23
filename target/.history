@@ -24,3 +24,7 @@ sbt
 compile 
 exit 
 compile 
+comile 
+compile 
+sbt
+compile 
