@@ -14,6 +14,6 @@ trait Subject[State] {
 
     def notifyObservers(state: State): Unit =
       observers foreach(_.receriveUpdate(state))
-  // a method to notify observers of state changes 
+  // a method to notify observers of state changes
 }
 
