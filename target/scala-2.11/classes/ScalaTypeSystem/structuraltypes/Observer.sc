@@ -3,7 +3,7 @@ import ScalaTypeSystem.structuraltypes.Subject
 import scala.language.reflectiveCalls
 
 object observer {
-    def receiveUpdate(state: Any) : Unit= println("got one" + state)
+    def receiveUpdate(state: Any) : Unit= println("got one: " + state)
 }
 
 val subject = new Subject {
