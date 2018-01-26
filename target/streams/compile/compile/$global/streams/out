@@ -1,5 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\ming\workspace\Programming_Scala\src\main\scala\ScalaObjectSystem\final-member.scala:8:16: overriding method fixedMethod in class NotFixed of type => String;[0m
-[0m[[0m[31merror[0m] [0m[0m method fixedMethod cannot override final member[0m
-[0m[[0m[31merror[0m] [0m[0m  override def fixedMethod = "not fixed"  // not compiled[0m
-[0m[[0m[31merror[0m] [0m[0m               ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\ming\workspace\Programming_Scala\src\main\scala\ScalaTypeSystem2\TypeLambdas\Future.scala:6:18: higher-kinded type should be enabled[0m
+[0m[[0m[33mwarn[0m] [0m[0mby making the implicit value scala.language.higherKinds visible.[0m
+[0m[[0m[33mwarn[0m] [0m[0mThis can be achieved by adding the import clause 'import scala.language.higherKinds'[0m
+[0m[[0m[33mwarn[0m] [0m[0mor by setting the compiler option -language:higherKinds.[0m
+[0m[[0m[33mwarn[0m] [0m[0mSee the Scala docs for value scala.language.higherKinds for a discussion[0m
+[0m[[0m[33mwarn[0m] [0m[0mwhy the feature should be explicitly enabled.[0m
+[0m[[0m[33mwarn[0m] [0m[0mtrait Functor[A,+M[_]] {                                             // <1>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

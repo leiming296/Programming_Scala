@@ -19,16 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pathexpressions.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/pathexpressions.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Add.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/higherkinded/Add.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add1.sc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add1.sc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/higherkinded/add1.sc">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -89,21 +79,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-seq.sc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/higherkinded/add-seq.sc">
+      <file leaf-file-name="Future.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/TypeLambdas/Future.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reduce.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/higherkinded/Reduce.scala">
+      <file leaf-file-name="Functor.sc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/TypeLambdas/Functor.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="238">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="f-bound.sc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/f-bound.sc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,9 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem/implicitly-args.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem/view-bounds.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem/view-bounds2.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem/OptionsExample.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem/LowerBoundsExamples.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem/lower-bounds2.sc" />
@@ -186,6 +183,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/ContextBound/contextBound2.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/higherkinded/Reduce1.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/higherkinded/add1.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/TypeLambdas/Future.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/TypeLambdas/Functor.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/f-bound.sc" />
       </list>
     </option>
   </component>
@@ -243,7 +243,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="ScalaTypeSystem2" type="462c0819:PsiDirectoryNode" />
+              <item name="ErickCommentsFirstWeek" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Programming_Scala_TestBook" type="b2602c69:ProjectViewProjectNode" />
@@ -252,16 +252,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="ScalaTypeSystem2" type="462c0819:PsiDirectoryNode" />
-              <item name="ContextBound" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Programming_Scala_TestBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Programming_Scala" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="ScalaTypeSystem2" type="462c0819:PsiDirectoryNode" />
-              <item name="higherkinded" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -478,28 +468,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem/implicitly-args.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem/view-bounds.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem/ViewBound.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem/view-bounds2.sc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -850,6 +818,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/TypeLambdas/Future.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/TypeLambdas/Functor.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaTypeSystem2/f-bound.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
