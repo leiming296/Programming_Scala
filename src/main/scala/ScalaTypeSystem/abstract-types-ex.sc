@@ -1,6 +1,6 @@
 
 trait exampleTrait {
-    type t1  // t1 is unconstrained
+     type t1  // t1 is unconstrained
      type t2>: t3 <: t1 // t2 is must be a supertype of t3 and subtype of t1
      type t3 <: t1 // t3 must be a subtype of t1
     type t4 <: Seq[t1] // t4 must be a subtype of seq of t1

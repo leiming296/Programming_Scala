@@ -12,7 +12,6 @@ package scopeA {
          class Nested {
            private val nestedField = 1
          }
-
         private val nested = new Nested
     }
 

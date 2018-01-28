@@ -12,7 +12,6 @@ trait T1 {
      val c2: C = new this.C
 }
 
-
 trait X {
   def setXX(x: String) : Unit = {} // Do nothing
 }
@@ -23,10 +22,8 @@ class C3 extends C2 with X {
      def setX4(x: String):  Unit = C3.super.setX1(x)
      def setX5(x: String): Unit = C3.super[C2].setX1(x)
      def setX6(x: String): Unit = C3.super[X].setXX(x)
-
     //  def setX7(x: String) : Unit = C3.super[C1].setX1(x)
    //  def setX8(x: String) : Unit= C3.super.super.setX1(x)
-
 }
 
 class C4 {class C5}

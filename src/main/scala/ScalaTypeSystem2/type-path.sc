@@ -11,5 +11,4 @@ class Service {
 
 val s1 = new Service
 
-
-// val s2 = new Service {override val logger = s1.logger}
+val s2 = new Service {override val logger = s1.logger}

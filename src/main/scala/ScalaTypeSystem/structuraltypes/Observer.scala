@@ -6,6 +6,7 @@ trait Subject {
      type State
 
      type Observer = {def receiveUpdate(state: Any): Unit}
+
       private var observers : List[Observer] = Nil
 
      def addObserver(observer: Observer) : Unit =

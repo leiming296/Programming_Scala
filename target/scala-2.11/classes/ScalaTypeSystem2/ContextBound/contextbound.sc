@@ -29,7 +29,20 @@ sum(List(1,2,3), IntMonoid)
 sum(List("a", "b", "c"), StringMonoid)
 
 // 每次都写一个Monoid显得过于累赘：
-def sum[A](xs: List[A])(implicit m: Monoid[A]) = xs.foldLeft(m.mzero)(m.mappend)
-// sum(List(1,2,3)) 
+def sumIm[A](xs: List[A])(implicit m: Monoid[A]) = xs.foldLeft(m.mzero)(m.mappend)
+// sum(List(1,2,3))//error，缺少隐式参数
+//我们再定义一个隐式参数：
 implicit val intMonoid = IntMonoid
-sum(List(1,2,3))
+implicit val stringMonoid = StringMonoid
+sumIm(List(1,2,3))
+//还记得我们刚才说的上下文绑定么，
+//sum是不是可以改写成上下文绑定的形式呢，当然可以：
+def sumCom[A: Monoid](xs: List[A]) = {
+  val m = implicitly[Monoid[A]] // 里从上下文中提取了哪个隐式值，也就是原来的implicit m：Monoid[A]
+  xs.foldLeft(m.mzero)(m.mappend)
+}
+// sumCom(List("a", "b","c"))
+
+sumCom(List(1, 2, 3))
+sumCom(List("a","b"))
+

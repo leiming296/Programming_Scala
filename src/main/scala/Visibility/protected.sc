@@ -1,5 +1,6 @@
 
 package scopeA {
+
   class ProtectedClass1(protected val protectedField1: Int) {
     protected val protectedField2 = 1
 
@@ -35,5 +36,5 @@ package scopeA {
 }
 
 package scopeB {
-  class ProtectedClass4B extends scopeA.ProtectedClass4 // ERROR
+  class ProtectedClass4B extends scopeA.ProtectedClass4// ERROR
 }

@@ -1,6 +1,5 @@
 
 import java.io._
-
 abstract class BulkReader {
   type InX
   val source: InX

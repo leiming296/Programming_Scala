@@ -1,12 +1,9 @@
 //package Visibility
 
 package scopeA {
-
      class PublicClass1{
        val publicField =1
-
        class Nested {val nestedField = 1}
-
        val nested = new Nested
      }
 
@@ -17,14 +14,11 @@ package scopeA {
 }
 
 
-
-
 package scopeB {
-
     class PublicClassB extends scopeA.PublicClass1
-
     class UsingClass(val publicClass: scopeA.PublicClass1) {
-           def method = "UsingClass:" + "field: " + publicClass.publicField + "nested field: " + publicClass.nested.nestedField
+           def method = "UsingClass:" + "field: " + publicClass.publicField +
+             "nested field: " + publicClass.nested.nestedField
     }
 }
 
